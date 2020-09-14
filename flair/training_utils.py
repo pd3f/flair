@@ -12,8 +12,8 @@ from torch.optim import Optimizer
 import flair
 from flair.data import Dictionary, Sentence
 from functools import reduce
-from sklearn.metrics import mean_squared_error, mean_absolute_error
-from scipy.stats import pearsonr, spearmanr
+# from sklearn.metrics import mean_squared_error, mean_absolute_error
+# from scipy.stats import pearsonr, spearmanr
 
 
 class Result(object):

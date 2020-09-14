@@ -6,11 +6,11 @@ from collections import Counter
 from functools import lru_cache
 
 import torch
-from bpemb import BPEmb
-from transformers import XLNetTokenizer, T5Tokenizer, GPT2Tokenizer, AutoTokenizer, AutoConfig, AutoModel
+# from bpemb import BPEmb
+# from transformers import XLNetTokenizer, T5Tokenizer, GPT2Tokenizer, AutoTokenizer, AutoConfig, AutoModel
 
 import flair
-import gensim
+# import gensim
 import os
 import re
 import logging
@@ -1476,7 +1476,7 @@ class MuseCrosslingualEmbeddings(TokenEmbeddings):
 
 
 # TODO: keep for backwards compatibility, but remove in future
-class BPEmbSerializable(BPEmb):
+# class BPEmbSerializable(BPEmb):
     def __getstate__(self):
         state = self.__dict__.copy()
         # save the sentence piece model as binary file (not as path which may change)
