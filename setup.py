@@ -4,7 +4,7 @@ with open("requirements.txt") as f:
     required = f.read().splitlines()
 
 setup(
-    name="flair",
+    name="pd3f-flair",
     version="0.6.0.post1",
     description="A very simple framework for state-of-the-art NLP",
     long_description=open("README.md", encoding="utf-8").read(),

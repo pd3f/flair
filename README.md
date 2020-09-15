@@ -1,3 +1,17 @@
+# NB: This is a Fork
+
+Flair's Language Models without unnecessary dependencies.
+
+This package removed all the unnecessary dependencies if you only want to use Flair's character-based language models.
+Flair listed all kind of optional requirements as hard requirments.
+This made the installation tedious and bloated.
+
+```bash
+pip install pd3f-flair
+```
+
+Below the original README.
+
 ![alt text](resources/docs/flair_logo_2020.png)
 
 [![PyPI version](https://badge.fury.io/py/flair.svg)](https://badge.fury.io/py/flair)
@@ -33,17 +47,17 @@ Now at [version 0.6](https://github.com/flairNLP/flair/releases)!
 
 Flair outperforms the previous best methods on a range of NLP tasks:
 
-| Task | Language | Dataset | Flair | Previous best |
-| -------------------------------  | ---  | ----------- | ---------------- | ------------- |
-| Named Entity Recognition |English | Conll-03    |  **93.18** (F1)  | *92.22 [(Peters et al., 2018)](https://arxiv.org/pdf/1802.05365.pdf)* |
-| Named Entity Recognition |English | Ontonotes   |  **89.3** (F1)  | *86.28 [(Chiu et al., 2016)](https://arxiv.org/pdf/1511.08308.pdf)* |
-| Emerging Entity Detection | English | WNUT-17      |  **49.49** (F1)  | *45.55 [(Aguilar et al., 2018)](http://aclweb.org/anthology/N18-1127.pdf)* |
-| Part-of-Speech tagging |English| WSJ  | **97.85**  | *97.64 [(Choi, 2016)](https://www.aclweb.org/anthology/N16-1031)*|
-| Chunking |English| Conll-2000  |  **96.72** (F1) | *96.36 [(Peters et al., 2017)](https://arxiv.org/pdf/1705.00108.pdf)*
-| Named Entity Recognition | German  | Conll-03    |  **88.27** (F1)  | *78.76 [(Lample et al., 2016)](https://arxiv.org/abs/1603.01360)* |
-| Named Entity Recognition |German  | Germeval    |  **84.65** (F1)  | *79.08 [(Hänig et al, 2014)](http://asv.informatik.uni-leipzig.de/publication/file/300/GermEval2014_ExB.pdf)*|
-| Named Entity Recognition | Dutch  | Conll-02    |  **92.38** (F1)  | *81.74 [(Lample et al., 2016)](https://arxiv.org/abs/1603.01360)* |
-| Named Entity Recognition |Polish  | PolEval-2018    |  **86.6** (F1) <br> [(Borchmann et al., 2018)](https://github.com/applicaai/poleval-2018) | *85.1 [(PolDeepNer)](https://github.com/CLARIN-PL/PolDeepNer/)*|
+| Task                      | Language | Dataset      | Flair                                                                                    | Previous best                                                                                                 |
+| ------------------------- | -------- | ------------ | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Named Entity Recognition  | English  | Conll-03     | **93.18** (F1)                                                                           | *92.22 [(Peters et al., 2018)](https://arxiv.org/pdf/1802.05365.pdf)*                                         |
+| Named Entity Recognition  | English  | Ontonotes    | **89.3** (F1)                                                                            | *86.28 [(Chiu et al., 2016)](https://arxiv.org/pdf/1511.08308.pdf)*                                           |
+| Emerging Entity Detection | English  | WNUT-17      | **49.49** (F1)                                                                           | *45.55 [(Aguilar et al., 2018)](http://aclweb.org/anthology/N18-1127.pdf)*                                    |
+| Part-of-Speech tagging    | English  | WSJ          | **97.85**                                                                                | *97.64 [(Choi, 2016)](https://www.aclweb.org/anthology/N16-1031)*                                             |
+| Chunking                  | English  | Conll-2000   | **96.72** (F1)                                                                           | *96.36 [(Peters et al., 2017)](https://arxiv.org/pdf/1705.00108.pdf)*                                         |
+| Named Entity Recognition  | German   | Conll-03     | **88.27** (F1)                                                                           | *78.76 [(Lample et al., 2016)](https://arxiv.org/abs/1603.01360)*                                             |
+| Named Entity Recognition  | German   | Germeval     | **84.65** (F1)                                                                           | *79.08 [(Hänig et al, 2014)](http://asv.informatik.uni-leipzig.de/publication/file/300/GermEval2014_ExB.pdf)* |
+| Named Entity Recognition  | Dutch    | Conll-02     | **92.38** (F1)                                                                           | *81.74 [(Lample et al., 2016)](https://arxiv.org/abs/1603.01360)*                                             |
+| Named Entity Recognition  | Polish   | PolEval-2018 | **86.6** (F1) <br> [(Borchmann et al., 2018)](https://github.com/applicaai/poleval-2018) | *85.1 [(PolDeepNer)](https://github.com/CLARIN-PL/PolDeepNer/)*                                               |
 
 Here's how to [reproduce these numbers](/resources/docs/EXPERIMENTS.md) using Flair. You can also find detailed evaluations and discussions in our papers:
 
